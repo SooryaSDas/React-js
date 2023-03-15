@@ -27,6 +27,3 @@ function Banner() {
 }
 
 export default Banner  
-
-// .sort(function (a, b) { return 0.5 - Math.random() })
-// setMovie(response.data.results.sort(function (a, b) { return 0.5 - Math.random() })[0])
