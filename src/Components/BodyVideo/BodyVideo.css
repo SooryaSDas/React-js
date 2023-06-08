@@ -1,0 +1,31 @@
+.div_video_content{
+    width: 59%;
+    padding: 13%;
+}
+.div_video_title{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.div_video_subtitle{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.div_body_video{
+ width: 30%;
+}
+.body_video{
+    width: 100%;
+}
+.body_video_image{
+    width: 130%;
+    position: relative;
+}
+.iframe{
+   margin-left: 6%;
+   margin-top: -23%;
+    position: absolute;
+}
+.body_video{
+    width: 130%;
+    padding-top: 20px;
+}

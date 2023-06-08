@@ -1,0 +1,65 @@
+.banner{
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/76c10fc9-7ccd-4fbf-bc59-f16a468921ca/4fb4af6e-d0ca-4c7f-b004-b34226727e55/IN-en-20230529-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-size: cover;
+    height: 700px;
+    color: white;
+}
+
+.fade_begin{
+    background-image: linear-gradient(to bottom, rgba(0,0,1,1), rgba(0,0,0,0));
+    height: 500px;
+}
+
+.fade-bottom{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
+    height: 700px;
+}
+
+.netflix-logo{
+    position: absolute;
+    left: 12rem;
+    top:20px;
+    width: 150px;
+}
+
+.sign-in{
+    position: absolute;
+    top : 20px;
+    right : 190px
+}
+.english{
+    position: absolute;
+    top : 20px;
+    right : 290px
+}
+
+.body-head1{
+    text-align: center;
+    padding-top: 300px;
+    font-weight: 900;
+    font-size: 45px;
+}
+
+.body-head2{
+    text-align: center;
+    padding-top: 10px;
+}
+.body-input{
+    text-align: center;
+    padding-top: 10px;
+   
+}
+.body-input-text{
+    height: 60px;
+    width: 350px;
+    background: rgba(0,0,0,0.7);
+}
+.body-input-btn{
+    width: 190px;
+    height: 60px;
+}
+.div_end{
+    width: 100%;
+    height: 10px;
+    background-color: rgb(44, 44, 44);
+}

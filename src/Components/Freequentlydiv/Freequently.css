@@ -1,0 +1,32 @@
+.freequently{
+    background-color: black;
+    color: white;
+    padding: 15%;
+    padding-top: 8%;
+    padding-bottom: 80px;
+}
+.freequently_head{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.show{
+    margin-left: 95%;
+}
+.show:hover{
+    cursor: pointer;
+}
+.readytowatch{
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    padding: 30px;
+}
+.input_box{
+    text-align: center;
+}
+.div_end{
+    width: 100%;
+    height: 10px;
+    background-color: rgb(44, 44, 44);
+}

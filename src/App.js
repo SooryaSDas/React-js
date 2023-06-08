@@ -1,21 +1,31 @@
-import react from "react";
 import './App.css'
-import { originals, actions, comedy, Drama, Romance } from "./urls";
-import Navbar from "./Components/Navbar/Navbar";
-import Banner from "./Components/Banner/Banner";
-import Rowpost from "./Components/RowPost/Rowpost";
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import MainBody from "./Components/MainBody";
+import HomePage from "./Components/HomePage.js/HomePage";
+// Bootstrap CSS
+import "bootstrap/dist/css/bootstrap.min.css";
+// Bootstrap Bundle JS
+import "bootstrap/dist/js/bootstrap.bundle.min";
+import Body from './Components/Body';
+
+
+const appRouter = createBrowserRouter(
+  [
+    {
+      path : "/",
+      element : <Body/>
+    },
+    {
+      path : "/body",
+      element : <MainBody/>
+    }
+  ])
+
+
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <Banner/>
-      <br />
-      <Rowpost url={originals} title="Netflix Originals"/>
-      <Rowpost url={actions} title="Action Movies"  isSmall/>
-      <Rowpost url={Romance} title="Romantic Movies" isSmall/>
-      <Rowpost url={comedy} title="Comedy Movies" isSmall/>
-      <Rowpost url={Drama} title="Drama" isSmall/>
-
+        <RouterProvider router={appRouter} />
     </div>
   );
 }

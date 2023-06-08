@@ -1,0 +1,19 @@
+.footer{
+    padding-left: 15%;
+    padding-top: 5%;
+    background-color: black;
+    color: white;
+}
+.listing{
+    padding-left: 10%;
+    padding-top: 3%;
+}
+.listing ul li{
+    padding: 5px;
+    list-style-type: none;
+    text-decoration: underline;
+}
+.netflix_india{
+    padding-top: 2%;
+    padding-bottom: 6%;
+}

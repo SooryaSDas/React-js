@@ -1,0 +1,33 @@
+.body-image{
+    width: 100%;
+    height: 580px;
+    background-color: black;
+    color: white;
+}
+.div_body_image{
+    padding: 70px;
+    padding-left: 12%;
+}
+.body_image{
+    height: 400px;
+    width: 130%;
+}
+.div_body_content{
+    padding: 70px;
+    padding-left: 2%;
+    padding-top: 10%;
+    padding-right: 10%;
+}
+.div_body_head{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.div_body_subtitle{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.div_end{
+    width: 100%;
+    height: 10px;
+    background-color: rgb(44, 44, 44);
+}
