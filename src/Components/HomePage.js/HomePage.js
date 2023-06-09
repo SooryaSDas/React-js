@@ -1,5 +1,6 @@
 import React from 'react'
 import "./HomePage.css";
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
   return (
@@ -8,9 +9,9 @@ const HomePage = () => {
       <div className='banner'>
         <div className=''>
             <div className="fade_begin">
-                <img className='netflix-logo' src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1920px-Netflix_2015_logo.svg.png' alt="logo" />
+               <Link to="/"> <img className='netflix-logo' src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1920px-Netflix_2015_logo.svg.png' alt="logo" /> </Link>
                 <button type="button" class="btn btn-dark english">🌐 English </button>
-                <button type="button" className="btn btn-danger sign-in">Sign In</button>
+               <Link to="/signin"> <button type="button" className="btn btn-danger sign-in">Sign In</button> </Link>
             <div>
             </div>
             <h2 className='body-head1'>Unlimited movies, TV shows and more</h2>

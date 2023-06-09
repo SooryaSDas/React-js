@@ -7,7 +7,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // Bootstrap Bundle JS
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import Body from './Components/Body';
-
+import PlaneBody from "./Components/SignInSignUp/PlaneBody"
+import SignIn from "./Components/SignIn/SignIn"
+import SignUp from "./Components/SignUp/SignUp"
 
 const appRouter = createBrowserRouter(
   [
@@ -18,6 +20,14 @@ const appRouter = createBrowserRouter(
     {
       path : "/body",
       element : <MainBody/>
+    },
+    {
+      path : "/signin",
+      element : <SignIn/>,
+    },
+    {
+      path : "/signup",
+      element : <SignUp/>
     }
   ])
 
