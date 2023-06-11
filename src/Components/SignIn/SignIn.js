@@ -24,7 +24,7 @@ const SignIn = () => {
                         class="form-control input-data-email" 
                         id="inputPassword2" 
                         placeholder="Email" />
-                      {email} {pass}
+                      {/* {email} {pass} */}
                   <input type="password" 
                         onChange={(e)=>SetPass(e.target.value)}
                         value={pass} 
@@ -32,7 +32,7 @@ const SignIn = () => {
                         id="inputPassword2" 
                         placeholder="Password" />
 
-                  <button type="button" class="btn btn-danger btn-lg signin-btn">Sign In</button>
+                <Link to="/body">  <button type="button" class="btn btn-danger btn-lg signin-btn">Sign In</button></Link>
                   <input type="checkbox" /> <span className='span-me'>Remember Me</span> 
                   <span className='span-need'>Need help?</span>
                   <br /><br />

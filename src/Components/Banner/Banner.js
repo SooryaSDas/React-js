@@ -20,7 +20,7 @@ function Banner() {
                     <button className='button' >My list</button>
                 </div>
                 <h1 className='description'>{movie ? movie.overview : ''}</h1>
-            </div>
+            </div> <br /><br />
         <div className="fade_bottom"></div>
         </div>
     )

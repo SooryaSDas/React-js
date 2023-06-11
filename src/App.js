@@ -41,3 +41,20 @@ function App() {
 }
 
 export default App;
+
+
+// firebase.auth().createUserWithEmailAndPassword(email,password).then((result)=>{
+//   result.user.updateProfile({displayName : username}).then(()=>{
+//     console.log(result)
+
+//   })
+// })
+
+
+// firebase.firestore().collection('users').add({
+//   id : result.user.uid,
+//   username : username,
+//   phone : phone,
+// }).then(()=>{
+//   history.push("/signin")
+// })
