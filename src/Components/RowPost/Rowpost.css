@@ -15,6 +15,9 @@
     display: none;
 }
 
+.poster_title{
+    padding: 10px;
+}
 
 .poster{
     max-height: 250px;

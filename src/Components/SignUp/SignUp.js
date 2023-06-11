@@ -48,7 +48,8 @@ const SignUp = () => {
                         name= "username"
                         class="form-control signup-pwd" 
                         id="inputPassword2" 
-                        placeholder="Username" 
+                        placeholder="Username"
+                        required 
                   />
                   <input type="tel"
                         value={phone} 
@@ -57,7 +58,8 @@ const SignUp = () => {
                         pattern="[0-9]{10}" 
                         class="form-control signup-pwd" 
                         id="inputPassword2" 
-                        placeholder="Phone number" 
+                        placeholder="Phone number"
+                        required 
                   />
 
                   <input type="email"
@@ -67,6 +69,7 @@ const SignUp = () => {
                           class="form-control signup-pwd" 
                           id="inputPassword2" 
                           placeholder="Email" 
+                          required
                   />
 
                   <input type="password"
@@ -76,6 +79,7 @@ const SignUp = () => {
                         class="form-control signup-pwd" 
                         id="inputPassword2" 
                         placeholder="Password" 
+                        required
                   />
 
                   <button type='submit' class="btn btn-danger btn-lg signup-btn">Sign In</button>

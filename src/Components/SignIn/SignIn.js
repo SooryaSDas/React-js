@@ -1,11 +1,25 @@
 import React from 'react'
 import "./SignIn.css"
-import { Link } from 'react-router-dom'
-import { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import { useState, useContext } from 'react'
+import {FirebaseContext} from "../../store/Context"
 
 const SignIn = () => {
+  const navigator = useNavigate();
   const [email, SetEmail] = useState();
-  const [pass, SetPass] = useState();
+  const [password, SetPass] = useState();
+  const {firebase} = useContext(FirebaseContext)
+
+  const handlesignin = (e)=>{
+    e.preventDefault()
+    firebase.auth().signInWithEmailAndPassword(email,password).then((result)=>{
+      // alert("loged in")
+      console.log(result)
+    }).catch((error)=>{
+      // alert(error.message)
+    })
+    navigator("/body")
+  }
 
   return ( 
         <div>
@@ -17,22 +31,27 @@ const SignIn = () => {
             <div className='div-sign-in'>
                 <div className='sign-in-contents'>
                   <h2 >Sign In</h2>
-
-                  <input type="email"
-                        onChange={(e)=>SetEmail(e.target.value)}
-                        value={email} 
-                        class="form-control input-data-email" 
-                        id="inputPassword2" 
-                        placeholder="Email" />
-                      {/* {email} {pass} */}
-                  <input type="password" 
+                  <form onSubmit={handlesignin}>
+                    <input type="email"
+                      required
+                      value={email} 
+                      onChange={(e)=>SetEmail(e.target.value)}
+                      class="form-control input-data-email" 
+                      id="inputPassword2" 
+                      placeholder="Email" 
+                    />
+                      {/* {email} {password} */}
+                    <input type="password" 
+                        required
+                        value={password} 
                         onChange={(e)=>SetPass(e.target.value)}
-                        value={pass} 
                         class="form-control input-data-pwd" 
                         id="inputPassword2" 
-                        placeholder="Password" />
+                        placeholder="Password" 
+                    />
 
-                <Link to="/body">  <button type="button" class="btn btn-danger btn-lg signin-btn">Sign In</button></Link>
+                    <button type="submit" class="btn btn-danger btn-lg signin-btn">Sign In</button>
+                  </form>
                   <input type="checkbox" /> <span className='span-me'>Remember Me</span> 
                   <span className='span-need'>Need help?</span>
                   <br /><br />

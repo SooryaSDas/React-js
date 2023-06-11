@@ -10,6 +10,8 @@ import Body from './Components/Body';
 import PlaneBody from "./Components/SignInSignUp/PlaneBody"
 import SignIn from "./Components/SignIn/SignIn"
 import SignUp from "./Components/SignUp/SignUp"
+import { useEffect, useContext } from 'react';
+import { AuthContext, FirebaseContext } from './store/Context';
 
 const appRouter = createBrowserRouter(
   [
@@ -33,6 +35,13 @@ const appRouter = createBrowserRouter(
 
 
 function App() {
+  const {setUser} = useContext(AuthContext)
+  const {firebase} = useContext(FirebaseContext)
+  useEffect(()=>{
+    firebase.auth().onAuthStateChanged((user)=>{
+      setUser(user)
+    })
+  })
   return (
     <div className="App">
         <RouterProvider router={appRouter} />
@@ -42,19 +51,3 @@ function App() {
 
 export default App;
 
-
-// firebase.auth().createUserWithEmailAndPassword(email,password).then((result)=>{
-//   result.user.updateProfile({displayName : username}).then(()=>{
-//     console.log(result)
-
-//   })
-// })
-
-
-// firebase.firestore().collection('users').add({
-//   id : result.user.uid,
-//   username : username,
-//   phone : phone,
-// }).then(()=>{
-//   history.push("/signin")
-// })

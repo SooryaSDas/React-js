@@ -1,7 +1,10 @@
+/* *{
+    color: rgb(8, 8, 8);
+} */
 .navbar_mainbody{
     position: fixed;
     top:0;
-    width: 95%;
+    width: 100%;
     height: 60px;
     padding: 20px;
     display: flex;
@@ -20,3 +23,7 @@
     right: 20px;
     width: 30px;
 } 
+
+.logout{
+    margin-right: 15%;
+}
