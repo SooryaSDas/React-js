@@ -10,7 +10,6 @@ const MainBody = () => {
     <div>
       <Navbar/>
       <Banner/>
-      <br />
       <Rowpost url={originals} title="Netflix Originals"/>
       <Rowpost url={actions} title="Action Movies"  isSmall/>
       <Rowpost url={Romance} title="Romantic Movies" isSmall/>

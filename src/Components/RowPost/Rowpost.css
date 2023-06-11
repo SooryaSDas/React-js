@@ -1,4 +1,5 @@
 .row{
+    background-color: black;
     margin-left: 20px;
     color: #fff;
 }
@@ -26,11 +27,15 @@
 }
 
 .smallPoster{
-    max-height: 189px;
+    max-height: 199px;
     margin-right: 10px;
     cursor: pointer;
 }
 
 .smallPoster:hover{
     transform: scale(1.1);
+}
+.poster_title{
+    margin-left: 20px;
+    margin-top: 10px;
 }
